@@ -69,9 +69,59 @@ button {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-/* Sections */
+/* Scroll Fade-In Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply fade-in to elements on load */
+.fade-in {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.fade-in-slow {
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+
+/* Component entry animations */
 section {
   padding: 5rem 0;
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Button and interactive element transitions */
+button, a, input, textarea {
+  transition: all 0.3s ease;
+}
+
+button:hover, a:hover {
+  transform: translateY(-2px);
+}
+
+/* Card hover effects */
+.card, .project-card {
+  transition: all 0.3s ease;
+}
+
+.card:hover, .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 /* Accessibility */

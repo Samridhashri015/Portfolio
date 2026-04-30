@@ -36,10 +36,11 @@ const Hero = ({ darkMode }) => {
         </p>
 
         {/* Intro Text */}
-        <p className={`text-lg md:text-xl mb-8 max-w-2xl mx-auto ${
+        <p className={`text-lg md:text-xl mb-8 max-w-2xl mx-auto fade-in ${
           darkMode ? 'text-gray-300' : 'text-gray-600'
         }`}>
-          B.Tech Computer Science Student | Passionate about building scalable web applications | 
+          B.Tech Computer Science Student at SRM Institute of Science and Technology | 
+          Passionate about building scalable web applications and solving real-world problems | 
           Proficient in React, Node.js, Java, and full-stack development
         </p>
 

@@ -15,7 +15,7 @@ const About = ({ darkMode }) => {
     >
       <div className="max-w-4xl mx-auto">
         {/* Section Title */}
-        <h2 className={`text-4xl font-bold mb-12 text-center ${
+        <h2 className={`text-4xl font-bold mb-12 text-center fade-in ${
           darkMode ? 'text-white' : 'text-gray-900'
         }`}>
           About Me

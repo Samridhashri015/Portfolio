@@ -79,10 +79,10 @@ const Projects = ({ darkMode }) => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className={`rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow ${
+              className={`rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 ${
                 darkMode
-                  ? 'bg-gray-700 border border-gray-600'
-                  : 'bg-white border border-gray-100'
+                  ? 'bg-gray-700 border border-gray-600 hover:border-blue-500'
+                  : 'bg-white border border-gray-100 hover:border-blue-500'
               }`}
             >
               {/* Card Content */}

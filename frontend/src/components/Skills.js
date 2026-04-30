@@ -45,10 +45,10 @@ const Skills = ({ darkMode }) => {
           {skillCategories.map((category, index) => (
             <div
               key={index}
-              className={`p-6 rounded-lg ${
+              className={`p-6 rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105 ${
                 darkMode
-                  ? 'bg-gray-800 border border-gray-700'
-                  : 'bg-gray-50 border border-gray-200'
+                  ? 'bg-gray-800 border border-gray-700 hover:border-blue-500'
+                  : 'bg-gray-50 border border-gray-200 hover:border-blue-500'
               }`}
             >
               {/* Category Title */}
